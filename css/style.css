@@ -4,17 +4,17 @@
 }
 
 /* Clear fix hack */
- .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
@@ -22,7 +22,7 @@
 /*******************************************/
 
 body {
-  margin:0%;
+  margin: 0%;
   width: 100%;
 }
 
@@ -43,22 +43,22 @@ body {
 }
 
 #form-section {
-  height: auto;
-  width: 45%;
-  margin-left: 2%;
+  height: 500px;
+  width: 500px;
   color: black;
-  background-image: url("/images/landing-page-img.png");
+  background-image: url(../images/landing-page-img.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-/*   height: 100vh;
+  padding: 2%;
+  /*   height: 100vh;
   width: 50%;
   float: left; */
 }
 
 
 h1 {
- font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 p {
@@ -71,7 +71,7 @@ p {
   font-family: 'Source Serif 4', serif;
 }
 
-#image-section{
+#image-section {
   /* background: url('images/logo-lockup.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -94,17 +94,18 @@ footer {
   background-color: rgb(229, 229, 229);
   font-size: 18px;
 }
-footer a{
+
+footer a {
   text-decoration: none;
   color: rgb(8, 21, 23);
 }
 
-li{
+li {
   list-style-type: none;
 }
 
-.copyright{
-  color: rgb(8,21,23);
+.copyright {
+  color: rgb(8, 21, 23);
 }
 
 
@@ -112,4 +113,11 @@ li{
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-@media screen (max-wid)
+@media screen and (max-width: 500px) {
+
+  #form-section,
+  #image-section {
+    width: 90%;
+    margin: auto;
+  }
+}
