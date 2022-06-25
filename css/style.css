@@ -34,36 +34,56 @@ body {
 
 } */
 
-#form-section{
-  float: left;
-  height: 100vh;
-  width: 50%;
-  padding: 180px;
-  font: black;
-  background-color: rgb(229, 229, 229);
+#main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
-h1{
-  font-size: 40px;
+#form-section {
+  height: auto;
+  width: 45%;
+  margin-left: 2%;
+  color: black;
+  background-image: url("/images/landing-page-img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+/*   height: 100vh;
+  width: 50%;
+  float: left; */
 }
-p{
+
+
+h1 {
+ font-family: 'Inter', sans-serif;
+}
+
+p {
   padding-bottom: 15px;
   letter-spacing: 0.5px;
   line-height: 27px;
   font-size: 18px;
-
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Source Serif 4', serif;
 }
 
 #image-section{
-background: url('logo-lockup.png');
-height: 100vh;
-width: 50%;
-float: left;
+  /* background: url('images/logo-lockup.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; */
+  height: auto;
+  width: 48%;
 }
-img{
-  height: 100%;
-  width: 100%;
-}
+
+
+/* img{
+
+} */
 
 footer {
   width: 100%;
@@ -92,3 +112,4 @@ li{
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+@media screen (max-wid)
